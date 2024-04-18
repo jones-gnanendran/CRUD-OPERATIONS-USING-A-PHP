@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Student Details Entry Form</title>
+<style>
+body
+{
+background-color:blue;
+}
+.btn
+{
+padding:8px 24px;
+background-color:royalblue;
+border-radius:24px;
+}
+.btn:hover
+{
+background-color:red;
+}
+.frm
+{
+background-color:olive;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+width:50%;
+height:75%;
+border-radius:25px;
+}
+
+#choices
+{
+	width:17%;
+}
+h1
+{
+text-align:center;
+}
+
+</style>
+</head>
+<body>
+<form action="data.php" method="post" class="frm">
+<h1>STUDENT REGISTRATION FORM</h1>
+<label for="name">Enter the Student Details</label>
+<input type="text" id="name" name="name">
+<label for="age">Enter the Student age</label>
+<input type="text" id="age" name="age">
+<label for="year">Enter the Student curr year</label>
+<input type="text" id="year" name="year">
+<label for="Dept">Enter the Student Department</label>
+<input type="text" id="Dept" name="Dept">
+<br>
+<div class="buttons">
+<label>Choose any one CRUD Operation</label>
+<br>
+<input type="submit" value="insert" name="action" class="btn">
+<input type="submit" value="update" name="action" class="btn">
+<input type="submit" value="delete" name="action" class="btn">
+<input type="submit" value="read" name="action" class="btn">
+</div>
+</form>
+</body>
+</html>
